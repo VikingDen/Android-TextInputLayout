@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -45,7 +43,7 @@ public class LoginActivity extends Activity {
                     usernameWrapper.setError("Not a valid email address!");
                     usernameWrapper.setErrorEnabled(true);
                 } else if (!validatePassword(password)) {
-                    passwordWrapper.setError("Not a valid email address!");
+                    passwordWrapper.setError("Not a valid password!");
                     passwordWrapper.setErrorEnabled(true);
                 } else {
                     usernameWrapper.setErrorEnabled(false);
