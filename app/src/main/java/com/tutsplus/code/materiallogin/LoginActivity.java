@@ -41,10 +41,8 @@ public class LoginActivity extends Activity {
                 String password = usernameWrapper.getEditText().getText().toString();
                 if (!validateEmail(username)) {
                     usernameWrapper.setError("Not a valid email address!");
-                    usernameWrapper.setErrorEnabled(true);
                 } else if (!validatePassword(password)) {
                     passwordWrapper.setError("Not a valid password!");
-                    passwordWrapper.setErrorEnabled(true);
                 } else {
                     usernameWrapper.setErrorEnabled(false);
                     passwordWrapper.setErrorEnabled(false);
